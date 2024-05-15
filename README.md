@@ -40,7 +40,7 @@ N_neighbor = 60
 #exploration-exploitation balance
 Cp = 0.02
 
-# samples of acquisition function
+# Search with VGT 
 num_samples=20000
 
 
