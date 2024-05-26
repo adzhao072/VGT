@@ -1,3 +1,19 @@
+# Voronoi Graph Traversing (VGT)
+Voronoi Graph Traversing (VGT) is a high-dimensional Bayesian optimization method designed to handle the high-dimensional input spaces ranging from hundreds to one thousand dimensions. VGT employs a Voronoi diagram to partition the design space and transform it into an undirected Voronoi graph. VGT explores the search space through iterative path selection, promising cell sampling, and graph expansion operations.
+
+Please cite this package as follows: 
+
+```
+@inproceedings{
+VGT-uai2024,
+title={Exploring High-dimensional Search Space via Voronoi Graph Traversing},
+author={Zhao, Aidong and Zhao, Xuyang and Gu, Tianchen and Bi, Zhaori and Sun, Xinwei and Yan, Changhao and Yang, Fan and Zhou, Dian and Zeng, Xuan},
+booktitle={The 40th Conference on Uncertainty in Artificial Intelligence},
+year={2024},
+url={https://openreview.net/forum?id=Phyo9GzgWd}
+}
+```
+
 
 ## Dependencies
 --------------
