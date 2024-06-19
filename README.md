@@ -31,39 +31,40 @@ url={https://openreview.net/forum?id=Phyo9GzgWd}
 ## Examples
 
 import numpy as np
+
 from benchmarks.synthetic_functions import Ackley
 
 
-#input dimensions
+# input dimensions
 dims = 100
 
-#normalize the input search space
+# normalize the input search space
 lb = np.zeros(dims)
+
 ub = np.ones(dims)
 
-#objective function
+# objective function
 f = Ackley 
 
-#random initial samples
+# random initial samples
 n_init = 50
 
-#maximal iterations
+# maximal iterations
 max_iter = 2050
 
-#number of neighbors for KNN
+# number of neighbors for KNN
 N_neighbor = 60
 
-#exploration-exploitation balance
+# exploration-exploitation balance
 Cp = 0.02
 
 # Search with VGT 
 num_samples=20000
 
-
-
 from VGT import VGT
 
 agent = VGT(f,lb,ub,n_init,max_iter,N_neighbor=N_neighbor,Cp= Cp,num_samples = num_samples)
+
 agent.search()
 
 
